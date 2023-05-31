@@ -1,0 +1,13 @@
+@startuml
+left to right direction
+
+actor 用户
+skinparam packageStyle rectangle
+
+rectangle 关卡选择界面 {
+  usecase 关卡选择
+}
+
+用户 --> 关卡选择 : 选择关卡
+
+@enduml

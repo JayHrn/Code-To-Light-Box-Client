@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor 用户
+rectangle 游戏界面 {
+  usecase 选择指令
+  usecase 拖放指令到函数框
+  usecase 完成指令编辑
+}
+
+用户 --> 选择指令 : 选择指令
+选择指令 --> 拖放指令到函数框 : 拖放指令
+拖放指令到函数框 --> 完成指令编辑 : 完成指令编辑
+
+@enduml

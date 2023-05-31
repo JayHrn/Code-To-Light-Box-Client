@@ -1,0 +1,28 @@
+@startuml
+title 游戏结果显示顺序图
+
+actor 用户
+boundary 游戏界面
+control 游戏控制器
+
+用户 -> 游戏界面: 点击启动按钮
+activate 用户
+activate 游戏界面
+
+游戏界面 -> 游戏控制器: 游戏结束
+activate 游戏控制器
+
+游戏控制器 -> 游戏界面: 获取游戏结果和用时信息
+activate 游戏界面
+
+游戏界面 --> 游戏控制器: 游戏结果和用时信息
+deactivate 游戏界面
+
+游戏控制器 --> 游戏界面: 游戏结果和用时信息
+deactivate 游戏控制器
+
+游戏界面 --> 用户: 显示游戏结果和用时信息
+deactivate 游戏界面
+deactivate 用户
+
+@enduml

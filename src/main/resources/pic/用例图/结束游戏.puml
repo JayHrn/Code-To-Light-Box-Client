@@ -1,0 +1,17 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor 用户
+rectangle 游戏界面 {
+  usecase 显示胜利画面
+  usecase 显示失败画面
+  usecase 查看游戏结果
+  usecase 结束游戏
+}
+用户 --> 查看游戏结果 : 查看
+用户 --> 结束游戏 : 点击结束
+游戏界面 --> 显示胜利画面 : 胜利
+游戏界面 --> 显示失败画面 : 失败
+
+@enduml

@@ -1,0 +1,41 @@
+'最终版
+@startuml
+title 开始游戏顺序图
+
+actor 用户
+boundary 游戏界面
+control 游戏控制器
+entity 游戏逻辑
+
+用户 -> 游戏界面: 选择关卡
+activate 用户
+activate 游戏界面
+
+游戏界面 -> 游戏控制器: 选择关卡
+activate 游戏控制器
+
+游戏控制器 -> 游戏逻辑: 加载地图和机器人位置
+activate 游戏逻辑
+
+游戏逻辑 --> 游戏界面: 地图和机器人加载完成
+deactivate 游戏逻辑
+
+游戏界面 --> 用户: 显示初始地图和机器人位置
+deactivate 游戏界面
+deactivate 用户
+
+用户 -> 游戏界面: 点击指令
+activate 用户
+activate 游戏界面
+
+游戏界面 -> 游戏控制器: 将指令添加到函数框中
+activate 游戏控制器
+
+游戏控制器 --> 游戏界面: 指令添加成功
+deactivate 游戏控制器
+
+游戏界面 --> 用户: 显示指令添加成功的消息
+deactivate 游戏界面
+deactivate 用户
+
+@enduml

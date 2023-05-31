@@ -1,0 +1,12 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor 用户
+rectangle 游戏界面 {
+  usecase 点击启动按钮
+}
+
+用户 --> 点击启动按钮 : 启动游戏
+
+@enduml

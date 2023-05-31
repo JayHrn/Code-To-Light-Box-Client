@@ -1,0 +1,32 @@
+'最终版
+@startuml
+title 游戏执行顺序图
+
+actor 用户
+boundary 游戏界面
+control 游戏控制器
+entity 机器人
+
+用户 -> 游戏界面: 点击启动按钮
+activate 用户
+activate 游戏界面
+
+游戏界面 -> 游戏控制器: 启动游戏
+activate 游戏控制器
+
+游戏控制器 -> 机器人: 执行指令
+activate 机器人
+deactivate 机器人
+
+游戏控制器 -> 游戏界面: 检查灯泡状态
+activate 游戏界面
+游戏界面 --> 游戏控制器: 灯泡状态
+deactivate 游戏界面
+
+游戏控制器 --> 游戏界面: 游戏结果
+deactivate 游戏控制器
+游戏界面 --> 用户: 游戏结果
+deactivate 游戏界面
+deactivate 用户
+
+@enduml

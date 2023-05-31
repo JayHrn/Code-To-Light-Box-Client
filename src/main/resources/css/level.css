@@ -1,0 +1,60 @@
+.root {
+    -fx-background-image: url('../img/selectLevelBG.png');
+    -fx-background-size: cover;
+}
+
+.backButton {
+    -fx-pref-width: 85;
+    -fx-pref-height: 85;
+    -fx-translate-x: 10;
+    -fx-translate-y: 10;
+    -fx-background-radius: 18 22 24 20;
+    -fx-background-color: transparent;
+    -fx-background-image: url('../img/back.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.level1Button {
+    -fx-pref-width: 85;
+    -fx-pref-height: 85;
+    -fx-translate-x: 400;
+    -fx-translate-y: 300;
+    -fx-background-radius: 18 22 24 20;
+    -fx-background-color: transparent;
+    -fx-background-image: url('../img/level1.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.level2Button {
+    -fx-pref-width: 85;
+    -fx-pref-height: 85;
+    -fx-translate-x: 550;
+    -fx-translate-y: 300;
+    -fx-background-radius: 18 22 24 20;
+    -fx-background-color: transparent;
+    -fx-background-image: url('../img/level2.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.level3Button {
+    -fx-pref-width: 85;
+    -fx-pref-height: 85;
+    -fx-translate-x: 700;
+    -fx-translate-y: 300;
+    -fx-background-radius: 18 22 24 20;
+    -fx-background-color: transparent;
+    -fx-background-image: url('../img/level3.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.backButton:hover, .level1Button:hover, .level2Button:hover, .level3Button:hover {
+    -fx-opacity: 0.8;
+}

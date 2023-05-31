@@ -1,0 +1,77 @@
+.root {
+    -fx-background-image: url('../img/main.png');
+}
+
+.startButton {
+    -fx-pref-width: 349;
+    -fx-pref-height: 152;
+    -fx-translate-x: 408;
+    -fx-translate-y: 440;
+    -fx-background-radius: 12px;
+    -fx-background-color: transparent;
+}
+
+.startButton:hover {
+    -fx-background-color: rgba(227, 242, 246, 0.3);
+}
+
+.rankButton {
+    -fx-pref-width: 352;
+    -fx-pref-height: 82;
+    -fx-translate-x: 400;
+    -fx-translate-y: 660;
+    -fx-background-radius: 12px;
+    -fx-background-color: transparent;
+    -fx-background-image: url('../img/rankButtonBG.png');
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.rankButton:hover {
+    -fx-opacity: 0.8;
+}
+
+.volumeButton {
+    -fx-pref-width: 85;
+    -fx-pref-height: 80;
+    -fx-translate-x: 10;
+    -fx-translate-y: 660;
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+    -fx-background-image: url('../img/volume.png');
+    -fx-background-repeat: repeat;
+}
+
+.volumeButton:hover {
+    -fx-opacity: 0.8;
+}
+
+.logoutButton {
+    -fx-pref-width: 80;
+    -fx-pref-height: 80;
+    -fx-translate-x: 10;
+    -fx-translate-y: 10;
+    -fx-background-radius: 12px;
+    -fx-border-radius: 12px;
+    -fx-background-size: contain;
+    -fx-background-image: url('../img/logout.png');
+}
+
+.logoutButton:hover {
+    -fx-opacity: 0.8;
+}
+.langButton {
+    -fx-pref-width: 80;
+    -fx-pref-height: 80;
+    -fx-translate-x: 1083;
+    -fx-translate-y: 3;
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-background-size: contain;
+    -fx-background-color: transparent;
+}
+
+/*.langButton:hover {*/
+/*    -fx-opacity: 0.8;*/
+/*}*/

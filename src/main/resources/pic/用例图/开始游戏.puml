@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor 用户
+rectangle 游戏界面 {
+  usecase 打开游戏
+  usecase 选择关卡
+  usecase 进入指令编辑界面
+}
+
+用户 --> 打开游戏 : 开始游戏
+用户 --> 选择关卡 : 选择关卡
+选择关卡 --> 进入指令编辑界面 : 进入编辑界面
+
+@enduml

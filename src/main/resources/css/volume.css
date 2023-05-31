@@ -1,0 +1,16 @@
+.backButton {
+    -fx-pref-width: 85;
+    -fx-pref-height: 85;
+    -fx-translate-x: 10;
+    -fx-translate-y: 10;
+    -fx-background-radius: 18 22 24 20;
+    -fx-background-color: transparent;
+    -fx-background-image: url('../img/back.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.backButton:hover {
+    -fx-opacity: 0.8;
+}
